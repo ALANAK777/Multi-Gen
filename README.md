@@ -9,6 +9,8 @@
 5. Gemini - Google AI studio using prompt
 6. Clerk authentication
 
+Thanks to TubeGuruji for your knowledge and guidance.
+
 ![ai-content1](https://github.com/user-attachments/assets/3f3a10d1-4e74-49f6-83ea-9f95c00c9fd0)
 ![ai-content2](https://github.com/user-attachments/assets/ef799dc7-c9e4-44b2-ba87-6e109bd5948b)
 ![ai-content3](https://github.com/user-attachments/assets/ac5a1006-8d17-4a2b-bd50-e24b2f9f6f09)
