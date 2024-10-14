@@ -23,11 +23,20 @@ export default async function History() {
     return <div>Please log in to view your history.</div>;
   }
 
-  const HistoryList: HISTORY[] = await db
+  const HistoryList = await db
     .select()
     .from(AIOutput)
-    .where(eq(AIOutput?.createdBy, user?.primaryEmailAddress?.emailAddress))
+    .where(eq(AIOutput.createdBy, user.primaryEmailAddress?.emailAddress ?? ''))
     .orderBy(desc(AIOutput.id));
 
-  return <HistoryClient historyList={HistoryList} />;
+  const typedHistoryList: HISTORY[] = HistoryList.map(item => ({
+    id: item.id,
+    formData: item.formData,
+    aiResponse: item.aiResponse ?? '',
+    templateSlug: item.templateSlug,
+    createdBy: item.createdBy ?? '',
+    createdAt: item.createdAt ?? '',
+  }));
+
+  return <HistoryClient historyList={typedHistoryList} />;
 }

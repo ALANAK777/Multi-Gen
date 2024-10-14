@@ -11,7 +11,7 @@ function layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [totalUsage, setTotalUsage] = useState<Number>(0);
+  const [totalUsage, setTotalUsage] = useState<number>(0);
   const [updateCreditUsage, setUpdateCreditUsage] = useState<any>();
 
   return (
@@ -33,5 +33,4 @@ function layout({
     </TotalUsageContext.Provider>
   );
 }
-
 export default layout;
