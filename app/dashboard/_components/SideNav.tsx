@@ -20,11 +20,6 @@ function SideNav() {
       path: "/dashboard/history",
     },
     {
-      name: "Billing",
-      icon: WalletCards,
-      path: "/dashboard/billing",
-    },
-    {
       name: "Setting",
       icon: Settings,
       path: "/dashboard/settings",
@@ -46,16 +41,17 @@ function SideNav() {
       <div className="mt-3">
         {MenuList.map((menu, index) => (
           <div
-            className={`flex gap-2 mb-2 p-3 hover:bg-primary hover:text-white rounded-lg
-          cursor-pointer items-center ${
-            path == menu.path && "bg-primary text-white"
-          }`}
-          >
-            <menu.icon className="h-6 w-6" />
-            <Link href={menu.path}>
-              <h2 className="text-lg">{menu.name}</h2>
-            </Link>
-          </div>
+  className={`flex gap-2 mb-2 p-3 hover:bg-[#FFB000] hover:text-white rounded-lg
+    cursor-pointer items-center ${
+      path == menu.path ? "bg-[#FFA33C] text-white" : ""
+    }`}
+>
+  <menu.icon className="h-6 w-6" />
+  <Link href={menu.path}>
+    <h2 className="text-lg">{menu.name}</h2>
+  </Link>
+</div>
+
         ))}
       </div>
       <div className="absolute bottom-10 left-0 w-full">

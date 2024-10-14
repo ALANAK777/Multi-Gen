@@ -1,11 +1,17 @@
-import { Button } from "@/components/ui/button";
+import Navbar from "@/components/Navbar";
+import HomeHeader from "@/components/HomeHeader";
+import Features from "@/components/Features";
+import Footer from "@/components/Footer";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <h2>Hello World Dawa!</h2>
-      <Button>Awesome</Button>
-    </div>
+  
+  <div>
+    <Navbar/>
+    <HomeHeader/>
+    <Features/>
+    <Footer/>
+  </div>
   );
 }
