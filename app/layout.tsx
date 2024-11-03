@@ -5,10 +5,21 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/toaster"
 const inter = Outfit({ subsets: ["latin"] });
 
+
+
+
+
+
+
+
+
+
 export const metadata: Metadata = {
   title: "MULTI-GEN",
   description: "AI content Generator",
-  
+  icons: {
+    icon: 'favicon.ico', 
+  },
 };
 
 export default function RootLayout({

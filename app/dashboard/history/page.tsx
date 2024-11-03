@@ -19,7 +19,6 @@ export default async function History() {
   const user = await currentUser();
 
   if (!user) {
-    // Handle the case where the user is not authenticated
     return <div>Please log in to view your history.</div>;
   }
 

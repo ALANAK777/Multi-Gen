@@ -15,7 +15,7 @@ interface HistoryClientProps {
 
 const HistoryClient: React.FC<HistoryClientProps> = ({ historyList }) => {
   const GetTemplateName = (slug: string) => {
-    const template: TEMPLATE | any = Templates?.find((item) => item);
+    const template: TEMPLATE | undefined = Templates?.find((item) => item.slug === slug);
     return template;
   };
 
@@ -36,7 +36,7 @@ const HistoryClient: React.FC<HistoryClientProps> = ({ historyList }) => {
           <div className="grid grid-cols-7 my-5 py-3 px-3">
             <h2 className="col-span-2 flex gap-2 items-center">
               <Image
-                src={GetTemplateName(item?.templateSlug)?.icon}
+                src={GetTemplateName(item?.templateSlug)?.icon || "/path/to/default/icon.png"}
                 width={25}
                 height={25}
                 alt="image"

@@ -48,7 +48,7 @@ function UsageTrack() {
             }}
           ></div>
         </div>
-        <h2 className="text-sm my-2">{totalUsage}/10,000 Characters used</h2>
+        <h2 className="text-sm my-2">{totalUsage} - Characters used</h2>
       </div>
      
     </div>
