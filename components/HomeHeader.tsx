@@ -38,7 +38,7 @@ const HomeHeader = () => {
         <div className="flex flex-col gap-6 justify-center items-center max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
             <div>
                     <Link href="/dashboard"  className="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-sm text-gray-800 p-1 ps-3 rounded-full transition hover:border-gray-300 dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-neutral-600 dark:text-neutral-200">
-                        Ai Content Membership - Join Now
+                       Start now
                         <LucideCircleArrowRight/>
                     </Link>
             </div>
